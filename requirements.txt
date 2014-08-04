@@ -8,7 +8,7 @@ aniso8601==0.82
 apns-client==0.2.1
 cffi==0.8.2
 cryptography==0.4
-gunicorn==18.0
+gunicorn==19.0
 httplib2==0.9
 itsdangerous==0.24
 marshmallow==0.6.0
