@@ -13,16 +13,16 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 #                                            Routes                                               #
 ###################################################################################################
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return Response("x" * 12, mimetype="application/json")
 
-@app.route('/test1')
+@app.route('/test1', methods=['GET', 'POST'])
 def test1():
     return Response("x" * 13082, mimetype="application/json")
 
 
-@app.route('/test2')
+@app.route('/test2', methods=['GET', 'POST'])
 def test2():
     return Response("x" * 12900, mimetype="application/json")
 
