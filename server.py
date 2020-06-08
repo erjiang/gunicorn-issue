@@ -27,6 +27,13 @@ def test2():
     return Response("x" * 12900, mimetype="application/json")
 
 
+@app.route('/test3', methods=['GET', 'POST'])
+def test3():
+    l = str(request.data)
+    return Response(l + ("x" * 13082), mimetype="application/json")
+
+
+
 def configure_error_handlers(app):
 
     @app.errorhandler(403)
