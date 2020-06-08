@@ -1,3 +1,0 @@
-[submodule "gunicorn"]
-	path = gunicorn
-	url = git@github.com:erjiang/gunicorn.git
